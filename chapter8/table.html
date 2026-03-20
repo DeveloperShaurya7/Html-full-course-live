@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+        #cs{
+            background-color: rgb(0, 255, 128);
+        }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        Student Information
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td rowspan="3">Ravi</td>
+        <td>25</td>
+        <td>Delhi</td>
+      </tr>
+      <tr>
+        <td colspan="2">Ayesha</td>
+        <td>22</td>
+        <td>Mumbai</td>
+      </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <table style="border-collapse: collapse; width: 100%;" border="1" >
+      <caption>
+        Course Schedule
+      </caption>
+      <tr id="cs">
+        <th>Day</th>
+        <th>Subject</th>
+        <th>Time</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>HTML</td>
+        <td>10:00 AM</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>CSS</td>
+        <td>11:00 AM</td>
+      </tr>
+    </table>
+  </body>
+</html>
