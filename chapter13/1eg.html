@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline and Block elements</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: auto;
+            box-sizing: border-box;
+        }
+        /* Block level elements */
+        h1, p, div {
+            background-color: lightblue;
+            margin: 10px 0;
+        }
+    
+        /* Inline level elements */
+        span, a {
+            /* display: inline-block; --> Use this to implement block level properties in inline elements*/ 
+            background-color: lightcoral;
+            margin: 0 5px;
+
+            /* height: 500px; --> It will not work until and unless you will define the display: inline-block */
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Block level elements -->
+    <h1>Heading</h1>
+    <p>This is a paragraph.</p>
+    <div>This is a div container.</div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Inline level elements -->
+     <span>This is an inline element.</span>
+        <a href="#">This is a link.</a>
+
+
+
+        <span style="display: inline-block; width: 150px; 
+height: 50px; background-color: yellow;"> 
+Inline-Block Box 
+</span> 
+  </body>
+</html>

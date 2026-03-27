@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global vs local attributes</title>
+
+    <style>
+        .myclass {
+            color: rgb(201, 33, 83);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- local attribute eg. src-->
+    <img src="myimg.jpg" alt="My Image" width="200" height="150">
+
+<!-- global attributes eg. id, title, class etc-->
+    <p id="myclass">This is a paragraph with a global attribute.</p>
+
+    <div class="myclass" contenteditable="">
+        <p class="myclass">This is a paragraph inside the div.</p>
+        <a href="#" class="myclass">Hello ji</a>
+
+    </div>
+
+
+    <!-- boolean attribute eg. contenteditable, disabled, checked etc -->
+
+    <button disabled onclick="alert('Hello')">Click me</button>
+</body>
+</html>
